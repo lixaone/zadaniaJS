@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie 5 - Romanovych Illia</title>
+  <style>
+    body{font-family:Arial, sans-serif; text-align:center; background:#fafafa;}
+    h2{color:#c0392b;}
+    button{margin:4px; padding:8px 14px; font-size:14px; cursor:pointer;}
+  </style>
+  <script>
+    // Uklad1 (numer w dzienniku 21 -> 21 mod 4 = 1):
+    // wszystkie 4 okna z grafikami ustawione w jednym rzedzie ponizej,
+    // tak aby zadne z nich na siebie nie nachodzilo.
+    function WinOpen_grafika_romanovych(nr){
+      var szer = 230, wys = 340, odstep = 15;
+      var lewy = 20 + (nr - 1) * (szer + odstep);
+      var gora = 430;
+      window.open(
+        'grafika' + nr + '_illia.html',
+        'grafika_okno_' + nr,
+        'width=' + szer + ',height=' + wys + ',left=' + lewy + ',top=' + gora
+      );
+    }
+    function okno_zamknij_romanovych_1(){
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  <h2>wykonał: Romanovych Illia mój numer w dzienniku 21, czyli<br>
+      mam układ [(21) mod 4=1] układ 1</h2>
+
+  <button onclick="WinOpen_grafika_romanovych(1)">grafika1</button>
+  <button onclick="WinOpen_grafika_romanovych(2)">grafika2</button>
+  <button onclick="WinOpen_grafika_romanovych(3)">grafika3</button>
+  <button onclick="WinOpen_grafika_romanovych(4)">grafika4</button>
+
+  <br><br><br><br><br><br><br><br>
+
+  <button onclick="okno_zamknij_romanovych_1()">zamknij okno</button>
+</body>
+</html>

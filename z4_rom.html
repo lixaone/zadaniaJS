@@ -1,0 +1,70 @@
+<html>
+  <head>
+      <title>Illia Romanovych - teoria</title>
+      <script type="text/javascript">
+        function okno_zamknij_romanovych()
+          {
+            window.close()
+          }
+      </script>
+      <style>
+        body{font-family:Arial, sans-serif; font-size:13px;}
+        b{color:#008000;}
+        p{margin:4px 0 12px 0;}
+      </style>
+  </head>
+<body>
+
+<b>1) Kiedy powstał JavaScript (podaj datę)?</b>
+<p>JavaScript powstał w 1995 roku, na mocy porozumienia z firmą Sun Microsystems.</p>
+
+<b>2) Dlaczego jest to język skryptowy?</b>
+<p>Ponieważ jest interpretowany, a nie kompilowany do kodu maszynowego - wystarczy przeglądarka internetowa obsługująca ten język, aby zobaczyć efekty jego działania.</p>
+
+<b>3) Gdzie jest wykonywany JS (klient lub serwer)?</b>
+<p>Głównie po stronie klienta, czyli w przeglądarce internetowej użytkownika (dzięki Node.js może być również wykonywany po stronie serwera).</p>
+
+<b>4) Dlaczego JS to bezpieczne narzędzie?</b>
+<p>Ponieważ ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, na którym przeglądana jest strona.</p>
+
+<b>5) Czy jest to język obiektowy, jeśli tak to dlaczego?</b>
+<p>Tak, ponieważ wykorzystuje definicje obiektów, metod i zdarzeń, które opisują właściwości obiektów. Struktura obiektów określana jest przez DOM (Document Object Model).</p>
+
+<b>6) Wymień zalety JS:</b>
+<p>Zaleta1: prostota i łatwość nauki języka.<br>
+Zaleta2: ogromna popularność - w Internecie dostępne są miliony praktycznych przykładów.<br>
+Zaleta3: odciąża serwery i ogranicza ilość danych przesyłanych między serwerem a przeglądarką klienta.</p>
+
+<b>7) Framework to:</b>
+<p>Rodzaj programu służącego do tworzenia innych programów w JS, np. Angular (Google) lub React (Facebook).</p>
+
+<b>8) Do aplikacji mobilnych można użyć Framework:</b>
+<p>React Native.</p>
+
+<b>9) Aplikacje responsywne to:</b>
+<p>Aplikacje, które dopasowują swój wygląd (rozmiar, ukrywanie, powiększanie elementów) do rozmiaru ekranu urządzenia, na którym są wyświetlane.</p>
+
+<b>10) Przepisz linię kodu i wytłumacz jak działa:</b>
+<p><code>&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&gt;</code><br>
+Tworzy przycisk o nazwie "przycisk" z napisem "Nowa Strona". Po kliknięciu wywołuje funkcję WinOpen(), która otwiera nowe okno przeglądarki.</p>
+
+<b>11) Przepisz linię kodu i wytłumacz jak działa:</b>
+<p><code>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</code><br>
+Otwiera nowe okno przeglądarki, w którym wyświetlany jest plik obraz.html. Okno nosi nazwę "okienko", ma ukryty pasek narzędzi, katalogów i menu, wysokość 280px, szerokość 160px oraz jest umieszczone 200px od góry i 200px od lewej krawędzi ekranu.</p>
+<p>
+toolbar=no &nbsp;&nbsp;- ukrywa pasek narzędzi przeglądarki<br>
+directories=no &nbsp;&nbsp;- ukrywa pasek katalogów/zakładek<br>
+menubar=no &nbsp;&nbsp;- ukrywa pasek menu<br>
+height=280 &nbsp;&nbsp;- wysokość okna w pikselach<br>
+width=160 &nbsp;&nbsp;- szerokość okna w pikselach<br>
+top=200 &nbsp;&nbsp;- odległość okna od góry ekranu w pikselach<br>
+left=200 &nbsp;&nbsp;- odległość okna od lewej krawędzi ekranu w pikselach
+</p>
+
+<b>12) Opisz instrukcję window.close()</b>
+<p>Zamyka aktualnie otwarte okno przeglądarki.</p>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij_romanovych()"/>
+
+</body>
+</html>
