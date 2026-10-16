@@ -1,0 +1,31 @@
+<html>
+<head><meta charset="utf-8"><title>Romanovych 3f2 - Zadanie 12 KOD</title></head>
+<body>
+<textarea cols="90" rows="24">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pl-PL&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Ile sekund - modyfikacja&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style=&quot;color:green;font-size:45px;&quot;&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+// Illia Romanovych 3f2 16.10.2026
+// Zadanie 12
+var D1_rom = prompt(&quot;D1=&quot;, &quot;&quot;);
+var G1_rom = prompt(&quot;G1=&quot;, &quot;&quot;);
+var D2_rom = prompt(&quot;D2=&quot;, &quot;&quot;);
+var G2_rom = prompt(&quot;G2=&quot;, &quot;&quot;);
+var d1 = parseFloat(D1_rom), g1 = parseFloat(G1_rom);
+var d2 = parseFloat(D2_rom), g2 = parseFloat(G2_rom);
+var sekund = (d1 - d2) * 24 * 60 * 60 + (g1 - g2) * 60 * 60;
+document.write(&quot;Ilość sekund między &quot; + d1 + &quot; dniem godz. &quot; + g1 + &quot; a &quot; + d2 + &quot; dniem godz. &quot; + g2 + &quot; = &quot; + sekund + &quot; sekund&lt;br&gt;&quot;);
+function okno_zamknij_romanovych() { window.close(); }
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;input type=&quot;button&quot; value=&quot;zamknij okno&quot; onclick=&quot;okno_zamknij_romanovych()&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

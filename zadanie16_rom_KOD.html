@@ -1,0 +1,38 @@
+<html>
+<head><meta charset="utf-8"><title>Romanovych 3f2 - Zadanie 16 KOD</title></head>
+<body>
+<textarea cols="90" rows="24">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pl-PL&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Sterowanie wydrukami&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;margin:0;color:navy;&quot;&gt;
+&lt;div id=&quot;linia1&quot; style=&quot;font-size:24px;white-space:nowrap;&quot;&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+// Illia Romanovych 3f2 16.10.2026
+// Zadanie 16
+var A_rom = parseInt(prompt(&quot;Podaj pierwszą liczbę A=&quot;, &quot;1&quot;));
+var B_rom = parseInt(prompt(&quot;Podaj drugą liczbę B=&quot;, &quot;2&quot;));
+document.write(&quot;wczytane liczby: &amp;nbsp;&amp;nbsp; A=&quot; + A_rom + &quot; &amp;nbsp;&amp;nbsp; B=&quot; + B_rom);
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;div id=&quot;linia2&quot; style=&quot;font-size:20px;white-space:nowrap;display:inline-block;&quot;&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+var w1 = Math.pow(A_rom, 3), w2 = 3 * A_rom * A_rom * B_rom, w3 = 3 * A_rom * B_rom * B_rom, w4 = Math.pow(B_rom, 3);
+var suma = w1 + w2 + w3 + w4;
+document.write(&quot;(&quot; + A_rom + &quot; + &quot; + B_rom + &quot;)^3 = &quot; + A_rom + &quot;^3 + 3*((&quot; + A_rom + &quot;)^2)*(&quot; + B_rom + &quot;) + 3*(&quot; + A_rom + &quot;)*((&quot; + B_rom + &quot;)^2) + &quot; + B_rom + &quot;^3 = &quot; + w1 + &quot; + &quot; + w2 + &quot; + &quot; + w3 + &quot; + &quot; + w4 + &quot; = &quot; + suma);
+// dopasowanie wielkości czcionki: druga linia na całą szerokość ekranu
+var el = document.getElementById(&quot;linia2&quot;);
+var rozmiar = 20;
+while (el.offsetWidth &lt; window.innerWidth - 20 &amp;&amp; rozmiar &lt; 200) { rozmiar++; el.style.fontSize = rozmiar + &quot;px&quot;; }
+while (el.offsetWidth &gt; window.innerWidth &amp;&amp; rozmiar &gt; 6) { rozmiar--; el.style.fontSize = rozmiar + &quot;px&quot;; }
+function okno_zamknij_romanovych() { window.close(); }
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;br&gt;&lt;input type=&quot;button&quot; value=&quot;zamknij okno&quot; onclick=&quot;okno_zamknij_romanovych()&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

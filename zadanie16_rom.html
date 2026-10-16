@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Sterowanie wydrukami</title>
+</head>
+<body style="margin:0;color:navy;">
+<div id="linia1" style="font-size:24px;white-space:nowrap;">
+<script language="JavaScript">
+// Illia Romanovych 3f2 16.10.2026
+// Zadanie 16
+var A_rom = parseInt(prompt("Podaj pierwszą liczbę A=", "1"));
+var B_rom = parseInt(prompt("Podaj drugą liczbę B=", "2"));
+document.write("wczytane liczby: &nbsp;&nbsp; A=" + A_rom + " &nbsp;&nbsp; B=" + B_rom);
+</script>
+</div>
+<div id="linia2" style="font-size:20px;white-space:nowrap;display:inline-block;">
+<script language="JavaScript">
+var w1 = Math.pow(A_rom, 3), w2 = 3 * A_rom * A_rom * B_rom, w3 = 3 * A_rom * B_rom * B_rom, w4 = Math.pow(B_rom, 3);
+var suma = w1 + w2 + w3 + w4;
+document.write("(" + A_rom + " + " + B_rom + ")^3 = " + A_rom + "^3 + 3*((" + A_rom + ")^2)*(" + B_rom + ") + 3*(" + A_rom + ")*((" + B_rom + ")^2) + " + B_rom + "^3 = " + w1 + " + " + w2 + " + " + w3 + " + " + w4 + " = " + suma);
+// dopasowanie wielkości czcionki: druga linia na całą szerokość ekranu
+var el = document.getElementById("linia2");
+var rozmiar = 20;
+while (el.offsetWidth < window.innerWidth - 20 && rozmiar < 200) { rozmiar++; el.style.fontSize = rozmiar + "px"; }
+while (el.offsetWidth > window.innerWidth && rozmiar > 6) { rozmiar--; el.style.fontSize = rozmiar + "px"; }
+function okno_zamknij_romanovych() { window.close(); }
+</script>
+</div>
+<br><input type="button" value="zamknij okno" onclick="okno_zamknij_romanovych()"/>
+</body>
+</html>
